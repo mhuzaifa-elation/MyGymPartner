@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OMekCTppF+gFdv16th0+nTks6Vl15AfUhQNsLqCHUZRYnIOcTWDJtzgcns1JsSE6+4BJ+ije/2QmmTaqK5kwvw==",
+  "dgSpecHash": "7JIJFj+tFUQH34IiM9Tg0dfzu00vNoGd/TzCqD/6w0/SDslzhzI0dLmOGJ3bdZugyDXLBLGWoLdqRS0ShqOj+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\MyGymPartner.Android.csproj",
+  "projectFilePath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\MyGymPartner.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mhuzaifa\\.nuget\\packages\\acr.userdialogs\\7.2.0.562\\acr.userdialogs.7.2.0.562.nupkg.sha512",
     "C:\\Users\\mhuzaifa\\.nuget\\packages\\andhud\\1.4.3\\andhud.1.4.3.nupkg.sha512",

@@ -2293,11 +2293,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\MyGymPartner.Android.csproj",
+      "projectUniqueName": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\MyGymPartner.Android.csproj",
       "projectName": "MyGymPartner.Android",
-      "projectPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\MyGymPartner.Android.csproj",
+      "projectPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\MyGymPartner.Android.csproj",
       "packagesPath": "C:\\Users\\mhuzaifa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\obj\\",
+      "outputPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2318,8 +2318,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj": {
-              "projectPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj"
+            "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj": {
+              "projectPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj"
             }
           }
         }

@@ -1115,11 +1115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner.iOS\\MyGymPartner.iOS.csproj",
+      "projectUniqueName": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.iOS\\MyGymPartner.iOS.csproj",
       "projectName": "MyGymPartner.iOS",
-      "projectPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner.iOS\\MyGymPartner.iOS.csproj",
+      "projectPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.iOS\\MyGymPartner.iOS.csproj",
       "packagesPath": "C:\\Users\\mhuzaifa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner.iOS\\obj\\",
+      "outputPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1140,8 +1140,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj": {
-              "projectPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj"
+            "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj": {
+              "projectPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj"
             }
           }
         }

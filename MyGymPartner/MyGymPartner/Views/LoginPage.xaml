@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    Title="Login"
+    Title="My Gym Partner"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MyGymPartner.Views.LoginPage"
@@ -9,25 +9,39 @@
     <ContentPage.Content>
         <StackLayout
             HorizontalOptions="FillAndExpand"
-            VerticalOptions="Center">
-            <Entry
-                Placeholder="Username"
-                Text="{Binding UsernameB}" />
-            <Entry
-                Placeholder="Password"
-                IsPassword="True"
-                Text="{Binding PasswordB}" />
-             
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                HorizontalOptions="Center"
+                VerticalOptions="Start">
+                <Label
+                    Text="Login"
+                    FontSize="Title"
+                    VerticalTextAlignment="Center"/>
+            </StackLayout>
             <StackLayout
                 HorizontalOptions="FillAndExpand"
-                Margin="5"
-                Orientation="Horizontal">
+                VerticalOptions="CenterAndExpand">
+                <Entry
+                    Placeholder="Username"
+                    Text="{Binding UsernameB}" />
+                <Entry
+                    Placeholder="Password"
+                    IsPassword="True"
+                    Text="{Binding PasswordB}" />
+            </StackLayout>
+
+            <StackLayout
+                    HorizontalOptions="FillAndExpand"
+                    Margin="5"
+                    Orientation="Horizontal"
+                    VerticalOptions="End">
+
                     <Button
-                        Text="LOGIN"
-                        Command="{Binding LoginC}" />
-                    <Button
-                        Text="CLEAR"
-                        x:Name="btnClear" />
+                            Text="LOGIN"
+                            Command="{Binding LoginC}" />
+                        <Button
+                            Text="CLEAR"
+                            x:Name="btnClear" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "XPkxkhA7K+s4MiZd6DyUMIh6QLjbvhw/j4rGO++vHTpI+0aSB5DtJgPIPOWAPRRb/eYK+P7xZmkZTQMpzjLXOw==",
+  "success": true,
+  "projectFilePath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner.iOS\\MyGymPartner.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mhuzaifa\\.nuget\\packages\\acr.userdialogs\\7.2.0.562\\acr.userdialogs.7.2.0.562.nupkg.sha512",
+    "C:\\Users\\mhuzaifa\\.nuget\\packages\\btprogresshud\\1.3.5\\btprogresshud.1.3.5.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\mhuzaifa\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512",
+    "C:\\Users\\mhuzaifa\\.nuget\\packages\\xamarin.forms.datagrid\\4.8.0\\xamarin.forms.datagrid.4.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}

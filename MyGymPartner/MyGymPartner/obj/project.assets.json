@@ -599,11 +599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj",
+      "projectUniqueName": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj",
       "projectName": "MyGymPartner",
-      "projectPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj",
+      "projectPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner\\MyGymPartner.csproj",
       "packagesPath": "C:\\Users\\mhuzaifa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhuzaifa\\source\\repos\\MyGymPartner\\MyGymPartner\\MyGymPartner\\obj\\",
+      "outputPath": "D:\\HUZAIFA\\GIT\\MyGymPartner\\MyGymPartner\\MyGymPartner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
