@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    Title="Exercise Details"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dg="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid"
+    x:Class="MyGymPartner.Views.AddEditExercisePage"
+    BindingContext="MyGymPartner.ViewModels.AddEditExerciseViewModel">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <StackLayout
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Exercise Name" />
+                <Entry
+                Placeholder="Enter Exercise Name"
+                    Text="{Binding ExerciseNameB}"
+                />
+                <Label
+                    Text="Type" />
+                <Entry
+                Placeholder="Enter Type"
+                Text="{Binding TypeB}" />
+                <Label
+                    Text="Description" />
+                <Editor
+                Placeholder="Enter Description"
+                    Text="{Binding DescriptionB}" 
+               VerticalOptions="FillAndExpand"                />
+        </StackLayout>
+            <StackLayout
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                Margin="5"
+                Orientation="Horizontal">
+                <Button
+                    Text="Save" />
+                <Button
+                    Text="Cancel" />
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

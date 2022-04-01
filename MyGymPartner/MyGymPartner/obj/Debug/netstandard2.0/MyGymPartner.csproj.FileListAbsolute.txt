@@ -1,0 +1,16 @@
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\bin\Debug\netstandard2.0\MyGymPartner.deps.json
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\bin\Debug\netstandard2.0\MyGymPartner.dll
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\bin\Debug\netstandard2.0\ref\MyGymPartner.dll
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\bin\Debug\netstandard2.0\MyGymPartner.pdb
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\Views\AddEditExercisePage.xaml.g.cs
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\Views\AdminExercisePage.xaml.g.cs
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\MyGymPartner.AssemblyInfoInputs.cache
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\MyGymPartner.AssemblyInfo.cs
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\MyGymPartner.csproj.CoreCompileInputs.cache
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\MyGymPartner.dll
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\ref\MyGymPartner.dll
+C:\Users\mhuzaifa\source\repos\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\MyGymPartner.pdb
