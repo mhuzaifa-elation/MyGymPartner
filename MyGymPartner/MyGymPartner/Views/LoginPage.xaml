@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MyGymPartner.Views.LoginPage"
     BindingContext="MyGymPartner.ViewModels.LoginViewModel">
-    
+
     <ContentPage.Content>
         <StackLayout
             HorizontalOptions="FillAndExpand"
@@ -16,7 +16,7 @@
                 <Label
                     Text="Login"
                     FontSize="Title"
-                    VerticalTextAlignment="Center"/>
+                    VerticalTextAlignment="Center" />
             </StackLayout>
             <StackLayout
                 HorizontalOptions="FillAndExpand"
@@ -29,19 +29,17 @@
                     IsPassword="True"
                     Text="{Binding PasswordB}" />
             </StackLayout>
-
             <StackLayout
-                    HorizontalOptions="FillAndExpand"
-                    Margin="5"
-                    Orientation="Horizontal"
-                    VerticalOptions="End">
-
-                    <Button
-                            Text="LOGIN"
-                            Command="{Binding LoginC}" />
-                        <Button
-                            Text="CLEAR"
-                            x:Name="btnClear" />
+                HorizontalOptions="FillAndExpand"
+                Orientation="Horizontal"
+                VerticalOptions="End"
+                Margin="0,0,0,20">
+                <Button
+                    Text="LOGIN"
+                    Command="{Binding LoginCommand}" />
+                <Button
+                    Text="CLEAR"
+                    Command="{Binding ClearCommand}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

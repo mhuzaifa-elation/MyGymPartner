@@ -13,12 +13,14 @@ namespace MyGymPartner.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        #region Constructor 
         public LoginPage()
         {
 
             InitializeComponent();
-            BindingContext = new LoginViewModel();
+            BindingContext = new LoginViewModel(); //Binding with Viewmodel
         }
+        #endregion
 
     }
 }

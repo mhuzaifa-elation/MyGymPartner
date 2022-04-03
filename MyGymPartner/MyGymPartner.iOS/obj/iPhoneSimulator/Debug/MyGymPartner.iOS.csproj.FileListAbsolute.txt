@@ -94,3 +94,14 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\De
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\MyGymPartner.iOS.pdb.DebugSymbolsProjectOutputGroupOutput.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Entitlements.plist.NoneOutput.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Info.plist.NoneOutput.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhoneSimulator\Debug\Firebase.Auth.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhoneSimulator\Debug\Firebase.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhoneSimulator\Debug\LiteDB.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhoneSimulator\Debug\System.Reactive.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\optimized\FavoriteIcon.png
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Firebase.Auth.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Firebase.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\LiteDB.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Newtonsoft.Json.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\System.Reactive.dll.ReferenceCopyLocalPaths.stamp

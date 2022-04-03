@@ -3,15 +3,18 @@ using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using MyGymPartner.Views;
-using Acr.UserDialogs;
+using Firebase.Auth;
+using Newtonsoft.Json;
+using Xamarin.Essentials;
+using System.Threading.Tasks;
 
 namespace MyGymPartner
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
-
-
-        public ICommand LoginC { get; set; }
+        #region ClassVariables
+        public ICommand ClearCommand { get; set; }
+        public ICommand LoginCommand { get; set; }
         string Username = "";
         string Password = "";
         public string PasswordB
@@ -40,46 +43,62 @@ namespace MyGymPartner
                 OnPropertyChanged(nameof(UsernameB));
             }
         }
+        #endregion
+        #region Constructor
+        //Initializing commands 
         public LoginViewModel()
         {
-            LoginC = new Command(LoginClicked);
-            UsernameB = "ADMIN";
-            PasswordB = "123";
+            LoginCommand = new Command(LoginClicked);
+            ClearCommand = new Command(ClearClicked);
         }
+        #endregion
+        #region Methods 
+        private  void ClearClicked() //Clears Credentials
+        {
+            UsernameB = string.Empty;
+            PasswordB = string.Empty;
+        }
+        private async void LoginClicked()//Log the user using firebase Authentication
+        {
+            try
+            {
+                if (UsernameB.Length == 0)
+                {
+                    throw new Exception("Username Cannot be Empty");
+                }
+                if (PasswordB.Length == 0)
+                {
+                    throw new Exception("Password Cannot be Empty");
+                }
+                FirebaseAuthLink content = await FirebaseServices.Login(UsernameB, PasswordB);
+                var serializedcontnet = JsonConvert.SerializeObject(content);
+                ClearClicked();
+                if (content.User.Email.ToUpper().Contains("ADMIN"))
+                {
+                    await Application.Current.MainPage.Navigation.PushAsync(new AdminExercisePage());
+                }
+                else
+                {
+                    await Application.Current.MainPage.Navigation.PushAsync(new UserExercisePage());
+                }
 
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", "Invalid Username/Password.\nTryAgain!", "OK");
+            }
+            
+
+        }
+        #endregion
+        #region  INotifyPropertyChanged Methods
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string property)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
-        private void LoginClicked()
-        {
-            try
-            {
-                if (Username.Length == 0)
-                {
-                    throw new Exception("Username Cannot be Empty");
-                }
-                if (Password.Length == 0)
-                {
-                    throw new Exception("Password Cannot be Empty");
-                }
-                if (Username == "ADMIN" && Password == "123")
-                {
-                    Application.Current.MainPage.Navigation.PushAsync(new AdminExercisePage());
-                }
-                else
-                {
-                    throw new Exception("Invalid Username/Password.\nTryAgain!");
-                }
-            }
-            catch (Exception ex)
-            {
-                 Application.Current.MainPage.DisplayAlert("Error", ex.Message,"OK");
-            }
-            
+        #endregion
 
-        }
     }
 }

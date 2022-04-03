@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    Title="Available Exercises"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:dg="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyGymPartner.Views.UserExercisePage"
+    BindingContext="MyGymPartner.ViewModels.UserExerciseViewModel">
+    <NavigationPage.TitleView>
+        <StackLayout
+            Orientation="Horizontal"
+            VerticalOptions="CenterAndExpand">
+            <Label
+                Text="Available Exercises"
+                TextColor="White"
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="FillAndExpand" />
+            <ImageButton
+                BackgroundColor="#7a6fbe"
+                HorizontalOptions="End"
+                Source="FavoriteIcon.png"
+                Margin="0,0,10,0" 
+                Command="{Binding ShowFavorites}"/>
+
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <StackLayout
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="StartAndExpand">
+                <dg:DataGrid
+                    ItemsSource="{Binding Exercises}"
+                    SelectionEnabled="True"
+                    SelectedItem="{Binding SelectedExercise}"
+                    RowHeight="60"
+                    HeaderHeight="30"
+                    BorderColor="#CCCCCC"
+                    HeaderBackground="#E0E6F8"
+                    PullToRefreshCommand="{Binding RefreshCommand}"
+                    IsRefreshing="{Binding IsRefreshing}"
+                    ActiveRowColor="#a497f7">
+                    <x:Arguments>
+                        <ListViewCachingStrategy>RetainElement</ListViewCachingStrategy>
+                    </x:Arguments>
+                    <dg:DataGrid.HeaderFontSize>
+                        <OnIdiom
+                            x:TypeArguments="x:Double">
+                            <OnIdiom.Tablet>15</OnIdiom.Tablet>
+                            <OnIdiom.Phone>12</OnIdiom.Phone>
+                        </OnIdiom>
+                    </dg:DataGrid.HeaderFontSize>
+                    <dg:DataGrid.Columns>
+                        <dg:DataGridColumn
+                            PropertyName="ExerciseName"
+                            Width="1*">
+                            <dg:DataGridColumn.FormattedTitle>
+                                <FormattedString>
+                                    <Span
+                                        Text="Name"
+                                        FontSize="13"
+                                        TextColor="Black"
+                                        FontAttributes="Bold" />
+                                </FormattedString>
+                            </dg:DataGridColumn.FormattedTitle>
+                        </dg:DataGridColumn>
+                        <dg:DataGridColumn
+                            Title="Description"
+                            PropertyName="Description"
+                            Width="2*" />
+                        <dg:DataGridColumn
+                            Title="Type"
+                            PropertyName="Type"
+                            Width="1*" />
+                    </dg:DataGrid.Columns>
+                    <dg:DataGrid.RowsBackgroundColorPalette>
+                        <dg:PaletteCollection>
+                            <Color>#e6e6e6</Color>
+                            <Color>#FFFFFF</Color>
+                        </dg:PaletteCollection>
+                    </dg:DataGrid.RowsBackgroundColorPalette>
+                </dg:DataGrid>
+            </StackLayout>
+            <Grid
+                RowDefinitions="*,*"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="FillAndExpand"
+                MinimumHeightRequest="90"
+                Margin="0,0,0,20">
+                <Button
+                    Grid.Row="0"
+                    MinimumHeightRequest="45"
+                    Text="Add to Favorites"
+                    Command="{Binding AddtoFavCommand}" />
+                <Grid
+                    Grid.Row="1"
+                    ColumnDefinitions="*,*"
+                    MinimumHeightRequest="45">
+
+                    <Button
+                        Grid.Column="0"
+                        Text="Show"
+                        Command="{Binding ShowCommand}" />
+                    <Button
+                        Grid.Column="1"
+                        Text="Back"
+                        Command="{Binding BackCommand}" />
+                </Grid>
+            </Grid >
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

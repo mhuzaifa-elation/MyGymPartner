@@ -17,7 +17,7 @@
                     ItemsSource="{Binding Exercises}"
                     SelectionEnabled="True"
                     SelectedItem="{Binding SelectedExercise}"
-                    RowHeight="40"
+                    RowHeight="60"
                     HeaderHeight="30"
                     BorderColor="#CCCCCC"
                     HeaderBackground="#E0E6F8"
@@ -36,7 +36,7 @@
                     </dg:DataGrid.HeaderFontSize>
                     <dg:DataGrid.Columns>
                         <dg:DataGridColumn
-                            PropertyName="TrainingName"
+                            PropertyName="ExerciseName"
                             Width="1*">
                             <dg:DataGridColumn.FormattedTitle>
                                 <FormattedString>
@@ -72,13 +72,13 @@
                 Orientation="Horizontal">
                 <Button
                     Text="Add"
-                    Command="{Binding AddCommand}"/>
+                    Command="{Binding AddCommand}" />
                 <Button
                     Text="Edit"
-                    Command="{Binding EditCommand}"/>
+                    Command="{Binding EditCommand}" />
                 <Button
                     Text="Delete"
-                   />
+                    Command="{Binding DeleteCommand}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

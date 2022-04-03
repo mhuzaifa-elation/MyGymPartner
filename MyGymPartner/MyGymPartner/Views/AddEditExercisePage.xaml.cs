@@ -14,16 +14,17 @@ namespace MyGymPartner.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddEditExercisePage : ContentPage
     {
-        public AddEditExercisePage()
+        #region Constructor
+        public AddEditExercisePage() //Initializing view model for new Exercise
         {
             InitializeComponent();
-            BindingContext = new AddEditExerciseViewModel(null);
+            BindingContext = new AddEditExerciseViewModel(null); 
         }
-
-        public AddEditExercisePage(ExcerciseModel selectedExercise)
+        public AddEditExercisePage(ExerciseModel selectedExercise)//Initializing view model for existing Exercise
         {
             InitializeComponent();
             BindingContext = new AddEditExerciseViewModel(selectedExercise);
         }
+        #endregion
     }
 }

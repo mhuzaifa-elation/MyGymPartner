@@ -1,9 +1,11 @@
 ﻿using Acr.UserDialogs;
+using Firebase.Database;
 using MyGymPartner.Models;
 using MyGymPartner.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -13,13 +15,15 @@ namespace MyGymPartner.ViewModels
 {
     public class AdminExcerciseViewModel : INotifyPropertyChanged
     {
-        private List<ExcerciseModel> _excercises;
-        private ExcerciseModel _selectedExercise;
+        #region ClassVariables
+        private List<ExerciseModel> _excercises;
+        private ExerciseModel _selectedExercise;
         private bool _isRefreshing;
         public ICommand RefreshCommand { get; set; }
         public ICommand AddCommand { get; set; }
         public ICommand EditCommand { get; set; }
-        public List<ExcerciseModel> Exercises
+        public ICommand DeleteCommand { get; set; }
+        public List<ExerciseModel> Exercises
         {
             get
             {
@@ -33,7 +37,7 @@ namespace MyGymPartner.ViewModels
         }
 
         
-        public ExcerciseModel SelectedExercise
+        public ExerciseModel SelectedExercise
         {
             get
             {
@@ -59,32 +63,42 @@ namespace MyGymPartner.ViewModels
             }
         }
 
-        
-
+        #endregion
+        #region Constructor
+        //Initializing commands and getting exercise from firebase
         public AdminExcerciseViewModel()
         {
-            var data = new List<ExcerciseModel>();
-
-
-            for (int i = 1; i <= 15; i++)
-            {
-                var person = new ExcerciseModel()
-                {
-
-                    TrainingName = "Execise" + i,
-                    Description = "Desc" + i,
-                    Type = i.ToString()
-                };
-                data.Add(person);
-
-            }
-            Exercises = data;
+            GetExercises();
             RefreshCommand = new Command(CmdRefresh);
             AddCommand = new Command(AddExercise);
             EditCommand = new Command(EditExercise);
+            DeleteCommand = new Command(DeleteExercise);
         }
+        #endregion
+        #region Methods 
 
-        private void EditExercise()
+        private async void GetExercises() //Gets latest exercises from firebase
+        {
+            List<ExerciseModel> AllExercises = await FirebaseServices.GetAllExercises();
+            Exercises = AllExercises;
+        }
+        private async void DeleteExercise() //Delete Selected Exercise from firebase
+        {
+            try
+            {
+                if (SelectedExercise != null)
+                {
+                    await FirebaseServices.DeleteExercise(SelectedExercise.Key);
+                    CmdRefresh();
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message,  "OK");
+
+            }
+        }
+        private void EditExercise() //Update Existing Exercise from firebase
         {
             try
             {
@@ -99,7 +113,7 @@ namespace MyGymPartner.ViewModels
 
             }
         }
-        private void AddExercise()
+        private void AddExercise() //Adds new Exercise in firebase
         {
             try
             {
@@ -113,12 +127,14 @@ namespace MyGymPartner.ViewModels
             }
         }
 
-        private async void CmdRefresh()
+        private  void CmdRefresh() //Refreshes Page with Latest exercises
         {
             IsRefreshing = true;
-            await Task.Delay(3000);
+            GetExercises();
             IsRefreshing = false;
         }
+        #endregion
+        #region  INotifyPropertyChanged Methods
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -127,7 +143,6 @@ namespace MyGymPartner.ViewModels
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
-       
-
+        #endregion
     }
 }

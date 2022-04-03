@@ -13,10 +13,12 @@ namespace MyGymPartner.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AdminExercisePage : ContentPage
     {
+        #region Constructor
         public AdminExercisePage()
         {
             InitializeComponent();
-            BindingContext = new AdminExcerciseViewModel();
+            BindingContext = new AdminExcerciseViewModel(); //Binding with Viewmodel
         }
+        #endregion
     }
 }
