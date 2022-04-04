@@ -17,6 +17,7 @@ namespace MyGymPartner.ViewModels
         private ExerciseModel _selectedExercise;
         private bool _isRefreshing;
         public ICommand RefreshCommand { get; set; }
+        public ICommand ShowCommand { get; set; }
         public ICommand BackCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
         public List<ExerciseModel> Exercises
@@ -67,6 +68,7 @@ namespace MyGymPartner.ViewModels
             GetExercises();
             RefreshCommand = new Command(CmdRefresh);
             BackCommand = new Command(async () => await Application.Current.MainPage.Navigation.PopAsync());
+            ShowCommand = new Command(ShowExercise);
             DeleteCommand = new Command(DeleteExercise);
         }
         #endregion
@@ -99,7 +101,17 @@ namespace MyGymPartner.ViewModels
 
             }
         }
-        private  void CmdRefresh() //Refreshes Page with Latest exercises
+        private async void ShowExercise() //Display Selected Exercise As A pop up Alert
+        {
+            if (SelectedExercise != null)
+            {
+                string ExerciseText = string.Format("Exercise Name : {0}\n\nType :{1}\n\nDescripion : {2}",
+                    SelectedExercise.ExerciseName, SelectedExercise.Type, SelectedExercise.Description);
+                await Application.Current.MainPage.DisplayAlert("Details", ExerciseText, "OK");
+            }
+
+        }
+        private void CmdRefresh() //Refreshes Page with Latest exercises
         {
             IsRefreshing = true;
             GetExercises();

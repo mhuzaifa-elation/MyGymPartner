@@ -19,6 +19,7 @@ namespace MyGymPartner.ViewModels
         private ExerciseModel _selectedExercise;
         private bool _isRefreshing;
         public ICommand RefreshCommand { get; set; }
+        public ICommand ShowNearbyGyms { get; set; }
         public ICommand ShowFavorites { get; set; }
         public ICommand AddtoFavCommand { get; set; }
         public ICommand ShowCommand { get; set; }
@@ -70,6 +71,7 @@ namespace MyGymPartner.ViewModels
         {
             GetExercises();
             RefreshCommand = new Command(CmdRefresh);
+            ShowNearbyGyms = new Command(async () => await Application.Current.MainPage.Navigation.PushAsync(new NearbyGymPage()));
             ShowFavorites = new Command(async () => await Application.Current.MainPage.Navigation.PushAsync(new FavoritesPage()));
             AddtoFavCommand = new Command(AddtoFavorites);
             ShowCommand = new Command(ShowExercise);

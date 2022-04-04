@@ -21,12 +21,28 @@
             <ImageButton
                 BackgroundColor="#7a6fbe"
                 HorizontalOptions="End"
+                Source="MapIcon.png"
+                Margin="0,0,10,0"
+                Command="{Binding ShowNearbyGyms}"/>
+            <ImageButton
+                BackgroundColor="#7a6fbe"
+                HorizontalOptions="End"
                 Source="FavoriteIcon.png"
                 Margin="0,0,10,0" 
                 Command="{Binding ShowFavorites}"/>
 
         </StackLayout>
     </NavigationPage.TitleView>
+    <ContentPage.Padding>
+        <OnPlatform
+            x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On
+                    Platform="iOS"
+                    Value="0, 20, 0, 20" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout
             VerticalOptions="FillAndExpand"
@@ -90,8 +106,7 @@
                 RowDefinitions="*,*"
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="FillAndExpand"
-                MinimumHeightRequest="90"
-                Margin="0,0,0,20">
+                MinimumHeightRequest="90">
                 <Button
                     Grid.Row="0"
                     MinimumHeightRequest="45"

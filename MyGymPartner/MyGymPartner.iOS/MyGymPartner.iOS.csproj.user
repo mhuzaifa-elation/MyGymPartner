@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>iPhone 12 iOS 14.5</SelectedDevice>
     <DefaultDevice>iPhone 12 iOS 14.5</DefaultDevice>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>

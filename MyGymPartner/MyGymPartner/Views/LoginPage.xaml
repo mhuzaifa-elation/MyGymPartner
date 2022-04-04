@@ -5,7 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MyGymPartner.Views.LoginPage"
     BindingContext="MyGymPartner.ViewModels.LoginViewModel">
-
+    <ContentPage.Padding>
+        <OnPlatform
+            x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On
+                    Platform="iOS"
+                    Value="0, 20, 0, 20" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout
             HorizontalOptions="FillAndExpand"
@@ -32,8 +41,7 @@
             <StackLayout
                 HorizontalOptions="FillAndExpand"
                 Orientation="Horizontal"
-                VerticalOptions="End"
-                Margin="0,0,0,20">
+                VerticalOptions="End">
                 <Button
                     Text="LOGIN"
                     Command="{Binding LoginCommand}" />

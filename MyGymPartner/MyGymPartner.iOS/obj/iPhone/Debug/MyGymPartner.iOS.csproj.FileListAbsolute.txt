@@ -3,6 +3,11 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\MyGym
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\BTProgressHUD.dll
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\BTProgressHUD.pdb
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\Firebase.Auth.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\Firebase.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\LiteDB.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\System.Reactive.dll
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
@@ -78,6 +83,11 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\MyGym
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\Acr.UserDialogs.dll.ReferenceCopyLocalPaths.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\BTProgressHUD.dll.ReferenceCopyLocalPaths.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\BTProgressHUD.pdb.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\Firebase.Auth.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\Firebase.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\LiteDB.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\Newtonsoft.Json.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\System.Reactive.dll.ReferenceCopyLocalPaths.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\Xamarin.Essentials.dll.ReferenceCopyLocalPaths.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\Xamarin.Essentials.pdb.ReferenceCopyLocalPaths.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhone\Debug\CopyFilesToMac\Xamarin.Forms.Core.dll.ReferenceCopyLocalPaths.stamp

@@ -142,4 +142,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\FavoriteIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MapIcon.png" />
+  </ItemGroup>
 </Project>

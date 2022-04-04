@@ -6,6 +6,16 @@
     xmlns:dg="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid"
     x:Class="MyGymPartner.Views.FavoritesPage"
     BindingContext="MyGymPartner.ViewModels.FavoritesViewModel">
+    <ContentPage.Padding>
+        <OnPlatform
+            x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On
+                    Platform="iOS"
+                    Value="0, 20, 0, 20" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout
             VerticalOptions="FillAndExpand"
@@ -65,18 +75,30 @@
                     </dg:DataGrid.RowsBackgroundColorPalette>
                 </dg:DataGrid>
             </StackLayout>
-            <StackLayout
-                VerticalOptions="End"
+            <Grid
+                RowDefinitions="*,*"
+                VerticalOptions="EndAndExpand"
                 HorizontalOptions="FillAndExpand"
-                Margin="5"
-                Orientation="Horizontal">
+                MinimumHeightRequest="90">
                 <Button
-                    Text="Delete"
-                    Command="{Binding DeleteCommand}" />
-                <Button
-                    Text="Back"
-                    Command="{Binding BackCommand}" />
-            </StackLayout>
+                    Grid.Row="0"
+                    MinimumHeightRequest="45"
+                    Text="Show"
+                    Command="{Binding ShowCommand}" />
+                <Grid
+                    Grid.Row="1"
+                    ColumnDefinitions="*,*"
+                    MinimumHeightRequest="45">
+                    <Button
+                        Grid.Column="0"
+                        Text="Delete"
+                        Command="{Binding DeleteCommand}" />
+                    <Button
+                        Grid.Column="1"
+                        Text="Back"
+                        Command="{Binding BackCommand}" />
+                </Grid>
+            </Grid >
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

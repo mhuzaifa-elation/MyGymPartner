@@ -6,6 +6,16 @@
     xmlns:dg="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid"
     x:Class="MyGymPartner.Views.AddEditExercisePage"
     BindingContext="MyGymPartner.ViewModels.AddEditExerciseViewModel">
+    <ContentPage.Padding>
+        <OnPlatform
+            x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On
+                    Platform="iOS"
+                    Value="0, 20, 0, 20" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout
             VerticalOptions="FillAndExpand"
@@ -33,7 +43,6 @@
             <StackLayout
                 VerticalOptions="End"
                 HorizontalOptions="FillAndExpand"
-                Margin="5"
                 Orientation="Horizontal">
                 <Button
                     Text="Save"
