@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MyGymPartner.Views.DisplayExercise">
+    <ContentPage.Padding>
+        <OnPlatform
+            x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On
+                    Platform="iOS"
+                    Value="0, 20, 0, 20" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <ScrollView
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <StackLayout
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="Exercise Name" />
+                    <Entry
+                        IsEnabled="False"
+                        Text="{Binding ExerciseNameB}" />
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="Type" />
+                    <Entry
+                        IsEnabled="False"
+                        Text="{Binding TypeB}" />
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="URL" />
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    Text="{Binding URLB}"
+                                    TextColor="Blue"
+                                    TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Command="{Binding URLTapCommand}" />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="Image" />
+                    <Image
+                        Source="{Binding ImageSourceB}"
+                        Aspect="AspectFit"
+                        HeightRequest="200"
+                        HorizontalOptions="FillAndExpand" />
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="Description" />
+                    <Editor
+                        IsEnabled="False"
+                        Text="{Binding DescriptionB}"
+                        VerticalOptions="FillAndExpand" />
+                </StackLayout>
+            </ScrollView>
+            <StackLayout
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Horizontal">
+                <Button
+                    Text="Back"
+                    Command="{Binding BackCommand}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -73,8 +73,8 @@ namespace MyGymPartner.ViewModels
             RefreshCommand = new Command(CmdRefresh);
             ShowNearbyGyms = new Command(async () => await Application.Current.MainPage.Navigation.PushAsync(new NearbyGymPage()));
             ShowFavorites = new Command(async () => await Application.Current.MainPage.Navigation.PushAsync(new FavoritesPage()));
-            AddtoFavCommand = new Command(AddtoFavorites);
             ShowCommand = new Command(ShowExercise);
+            AddtoFavCommand = new Command(AddtoFavorites);
             BackCommand = new Command(async () => await Application.Current.MainPage.Navigation.PopAsync());
         }
         #endregion
@@ -90,9 +90,7 @@ namespace MyGymPartner.ViewModels
         {
             if (SelectedExercise != null)
             {
-                string ExerciseText = string.Format("Exercise Name : {0}\n\nType :{1}\n\nDescripion : {2}",
-                    SelectedExercise.ExerciseName, SelectedExercise.Type, SelectedExercise.Description);
-                await Application.Current.MainPage.DisplayAlert("Details", ExerciseText, "OK");
+                await Application.Current.MainPage.Navigation.PushAsync(new DisplayExercise(SelectedExercise));
             }
 
         }

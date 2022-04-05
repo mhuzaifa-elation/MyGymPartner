@@ -20,26 +20,57 @@
         <StackLayout
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand">
-            <StackLayout
+            <ScrollView
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand">
-                <Label
-                    Text="Exercise Name" />
-                <Entry
-                    Placeholder="Enter Exercise Name"
-                    Text="{Binding ExerciseNameB}" />
-                <Label
-                    Text="Type" />
-                <Entry
-                    Placeholder="Enter Type"
-                    Text="{Binding TypeB}" />
-                <Label
-                    Text="Description" />
-                <Editor
-                    Placeholder="Enter Description"
-                    Text="{Binding DescriptionB}"
-                    VerticalOptions="FillAndExpand" />
-            </StackLayout>
+                <StackLayout
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="Exercise Name" />
+                    <Entry
+                        Placeholder="Enter Exercise Name"
+                        Text="{Binding ExerciseNameB}" />
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="Type" />
+                    <Entry
+                        Placeholder="Enter Type"
+                        Text="{Binding TypeB}" />
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="URL" />
+                    <Entry
+                        Placeholder="Enter URL"
+                        Text="{Binding URLB}" />
+                    <Grid
+                        VerticalOptions="Fill"
+                        HorizontalOptions="FillAndExpand"
+                        ColumnDefinitions="70*,30*">
+                        <Label
+                            Grid.Column="0"
+                            TextColor="DarkSlateGray"
+                            Text="Image" />
+                        <Button
+                            Grid.Column="1"
+                            Text="Select Image"
+                            Command="{Binding SelectImageCommand}" />
+                    </Grid>
+                    <Image
+                        Source="{Binding ImageSourceB}"
+                        Aspect="AspectFit"
+                        HeightRequest="200"
+                        HorizontalOptions="FillAndExpand" />
+                    <Label
+                        TextColor="DarkSlateGray"
+                        Text="Description" />
+                    <Editor
+                        Placeholder="Enter Description"
+                        Text="{Binding DescriptionB}"
+                        VerticalOptions="FillAndExpand" />
+                </StackLayout>
+            </ScrollView>
             <StackLayout
                 VerticalOptions="End"
                 HorizontalOptions="FillAndExpand"

@@ -31,7 +31,7 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand">
                 <Entry
-                    Placeholder="Username"
+                    Placeholder="Email"
                     Text="{Binding UsernameB}" />
                 <Entry
                     Placeholder="Password"
@@ -48,6 +48,9 @@
                 <Button
                     Text="CLEAR"
                     Command="{Binding ClearCommand}" />
+                <Button
+                    Text="Register"
+                    Command="{Binding RegisterCommand}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -14,7 +14,7 @@
           "FirebaseDatabase.net": "4.0.7",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "13.0.1",
-          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.1905",
           "Xamarin.Forms.DataGrid": "4.8.0"
         },
@@ -169,7 +169,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Xamarin.Essentials/1.5.3.2": {
+      "Xamarin.Essentials/1.7.1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -341,12 +341,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.5.3.2": {
+    "Xamarin.Essentials/1.7.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
-      "path": "xamarin.essentials/1.5.3.2",
-      "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
+      "sha512": "sha512-u7pUgvHJKTYo5ATiwRZvYviq2O0AQXIqxdna+sMxqidfWpbD7FBgFOLNAZzWKSll/AQBPeDrqLAWZNLq+ztpmQ==",
+      "path": "xamarin.essentials/1.7.1",
+      "hashPath": "xamarin.essentials.1.7.1.nupkg.sha512"
     },
     "Xamarin.Forms/5.0.0.1905": {
       "type": "package",

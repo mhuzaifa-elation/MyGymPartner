@@ -105,3 +105,4 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\De
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\LiteDB.dll.ReferenceCopyLocalPaths.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Newtonsoft.Json.dll.ReferenceCopyLocalPaths.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\System.Reactive.dll.ReferenceCopyLocalPaths.stamp
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.iOS\obj\iPhoneSimulator\Debug\optimized\MapIcon.png

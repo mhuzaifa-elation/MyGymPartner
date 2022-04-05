@@ -606,3 +606,6 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Debug\100\stam
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Debug\100\res\drawable\mapicon.png
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Debug\100\android\src\crc64a0e0a82d0db9a07d\Connectivity_EssentialsNetworkCallback.java
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Debug\100\android\src\crc64a0e0a82d0db9a07d\IntermediateActivity.java
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Debug\100\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorIntermediateActivity.java

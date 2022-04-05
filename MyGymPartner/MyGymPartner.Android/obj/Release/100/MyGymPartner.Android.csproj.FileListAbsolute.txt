@@ -497,3 +497,4 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Release\100\st
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Release\100\stamp\_GeneratePackageManagerJava.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Release\100\stamp\_ResolveLibraryProjectImports.stamp
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Release\100\res\drawable\mapicon.png
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner.Android\obj\Release\100\android\src\crc64a0e0a82d0db9a07d\IntermediateActivity.java

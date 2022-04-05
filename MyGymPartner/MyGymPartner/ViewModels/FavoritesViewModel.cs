@@ -1,4 +1,5 @@
 ﻿using MyGymPartner.Models;
+using MyGymPartner.Views;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -105,9 +106,7 @@ namespace MyGymPartner.ViewModels
         {
             if (SelectedExercise != null)
             {
-                string ExerciseText = string.Format("Exercise Name : {0}\n\nType :{1}\n\nDescripion : {2}",
-                    SelectedExercise.ExerciseName, SelectedExercise.Type, SelectedExercise.Description);
-                await Application.Current.MainPage.DisplayAlert("Details", ExerciseText, "OK");
+                await Application.Current.MainPage.Navigation.PushAsync(new DisplayExercise(SelectedExercise));
             }
 
         }

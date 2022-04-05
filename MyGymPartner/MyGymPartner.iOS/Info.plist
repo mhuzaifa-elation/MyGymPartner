@@ -38,5 +38,9 @@
 	<string>Light</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This App want to know your Location</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This App want to Access Storage</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This App want to Access Photos</string>
 </dict>
 </plist>

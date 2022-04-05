@@ -208,7 +208,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "Xamarin.Essentials/1.5.3.2": {
+      "Xamarin.Essentials/1.7.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -1138,10 +1138,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.5.3.2": {
-      "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
+    "Xamarin.Essentials/1.7.1": {
+      "sha512": "u7pUgvHJKTYo5ATiwRZvYviq2O0AQXIqxdna+sMxqidfWpbD7FBgFOLNAZzWKSll/AQBPeDrqLAWZNLq+ztpmQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.5.3.2",
+      "path": "xamarin.essentials/1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1150,15 +1150,6 @@
         "lib/monoandroid10.0/Xamarin.Essentials.dll",
         "lib/monoandroid10.0/Xamarin.Essentials.pdb",
         "lib/monoandroid10.0/Xamarin.Essentials.xml",
-        "lib/monoandroid80/Xamarin.Essentials.dll",
-        "lib/monoandroid80/Xamarin.Essentials.pdb",
-        "lib/monoandroid80/Xamarin.Essentials.xml",
-        "lib/monoandroid81/Xamarin.Essentials.dll",
-        "lib/monoandroid81/Xamarin.Essentials.pdb",
-        "lib/monoandroid81/Xamarin.Essentials.xml",
-        "lib/monoandroid90/Xamarin.Essentials.dll",
-        "lib/monoandroid90/Xamarin.Essentials.pdb",
-        "lib/monoandroid90/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
         "lib/netstandard1.0/Xamarin.Essentials.pdb",
         "lib/netstandard1.0/Xamarin.Essentials.xml",
@@ -1175,6 +1166,9 @@
         "lib/xamarinios10/Xamarin.Essentials.dll",
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
+        "lib/xamarinmac20/Xamarin.Essentials.dll",
+        "lib/xamarinmac20/Xamarin.Essentials.pdb",
+        "lib/xamarinmac20/Xamarin.Essentials.xml",
         "lib/xamarintvos10/Xamarin.Essentials.dll",
         "lib/xamarintvos10/Xamarin.Essentials.pdb",
         "lib/xamarintvos10/Xamarin.Essentials.xml",
@@ -1182,7 +1176,7 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.5.3.2.nupkg.sha512",
+        "xamarin.essentials.1.7.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
@@ -1422,7 +1416,7 @@
       "FirebaseDatabase.net >= 4.0.7",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.1",
-      "Xamarin.Essentials >= 1.5.3.2",
+      "Xamarin.Essentials >= 1.7.1",
       "Xamarin.Forms >= 5.0.0.1905",
       "Xamarin.Forms.DataGrid >= 4.8.0"
     ]
@@ -1495,7 +1489,7 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.5.3.2, )"
+            "version": "[1.7.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

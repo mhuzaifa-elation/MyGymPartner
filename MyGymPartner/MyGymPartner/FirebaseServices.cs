@@ -17,7 +17,14 @@ namespace MyGymPartner
         static FirebaseClient fc = new FirebaseClient(Utils.RealtimeDbURL);
         #endregion
         #region Methods
-        public static async Task<FirebaseAuthLink> Login(string Username,string Password) //Login Method for firebase Authentication
+        public static async Task<FirebaseAuthLink> Signup(string Username,string Password) //Login Method for firebase Authentication
+        {
+            var authProvider = new FirebaseAuthProvider(new FirebaseConfig(Utils.WebAPIKey));
+            var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(Username, Password);
+            var content = await auth.GetFreshAuthAsync();
+            return content;
+        }
+        public static async Task<FirebaseAuthLink> Login(string Username, string Password) //Login Method for firebase Authentication
         {
             var authProvider = new FirebaseAuthProvider(new FirebaseConfig(Utils.WebAPIKey));
             var auth = await authProvider.SignInWithEmailAndPasswordAsync(Username, Password);
@@ -34,7 +41,9 @@ namespace MyGymPartner
                   Key = item.Key,
                   ExerciseName = item.Object.ExerciseName,
                   Description = item.Object.Description,
-                  Type = item.Object.Type
+                  Type = item.Object.Type,
+                  URL = item.Object.URL,
+                  ImageText = item.Object.ImageText
               }).ToList();
             return AllExercises;
         }

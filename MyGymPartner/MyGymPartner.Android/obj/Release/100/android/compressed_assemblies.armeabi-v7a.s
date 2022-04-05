@@ -91,7 +91,7 @@
 
 	/* 7: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.long	2039296
+	.long	2064896
 	/* loaded */
 	.byte	0
 	/* data */
@@ -109,7 +109,7 @@
 
 	/* 9: MyGymPartner.Android.dll */
 	/* uncompressed_file_size */
-	.long	425984
+	.long	425472
 	/* loaded */
 	.byte	0
 	/* data */
@@ -118,7 +118,7 @@
 
 	/* 10: MyGymPartner.dll */
 	/* uncompressed_file_size */
-	.long	56320
+	.long	73728
 	/* loaded */
 	.byte	0
 	/* data */
@@ -226,7 +226,7 @@
 
 	/* 22: System.dll */
 	/* uncompressed_file_size */
-	.long	883200
+	.long	883712
 	/* loaded */
 	.byte	0
 	/* data */
@@ -361,7 +361,7 @@
 
 	/* 37: Xamarin.AndroidX.Core.dll */
 	/* uncompressed_file_size */
-	.long	582656
+	.long	583680
 	/* loaded */
 	.byte	0
 	/* data */
@@ -631,7 +631,7 @@
 
 	/* 67: Xamarin.Essentials.dll */
 	/* uncompressed_file_size */
-	.long	44032
+	.long	55296
 	/* loaded */
 	.byte	0
 	/* data */

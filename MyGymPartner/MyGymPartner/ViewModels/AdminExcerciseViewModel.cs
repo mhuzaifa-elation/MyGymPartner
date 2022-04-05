@@ -105,6 +105,7 @@ namespace MyGymPartner.ViewModels
                 if (SelectedExercise != null)
                 {
                     Application.Current.MainPage.Navigation.PushAsync(new AddEditExercisePage(SelectedExercise));
+                    MessagingCenter.Subscribe<string>(this, "Refresh", (v) => { CmdRefresh(); });
                 }
             }
             catch (Exception ex)
@@ -117,8 +118,8 @@ namespace MyGymPartner.ViewModels
         {
             try
             {
-             Application.Current.MainPage.Navigation.PushAsync(new AddEditExercisePage());
-
+                Application.Current.MainPage.Navigation.PushAsync(new AddEditExercisePage());
+                MessagingCenter.Subscribe<string>(this, "Refresh", (v) => { CmdRefresh(); });
             }
             catch (Exception ex)
             {

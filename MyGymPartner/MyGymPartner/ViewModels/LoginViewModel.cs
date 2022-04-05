@@ -13,6 +13,7 @@ namespace MyGymPartner
     public class LoginViewModel : INotifyPropertyChanged
     {
         #region ClassVariables
+        public ICommand RegisterCommand { get; set; }
         public ICommand ClearCommand { get; set; }
         public ICommand LoginCommand { get; set; }
         string Username = "";
@@ -50,6 +51,7 @@ namespace MyGymPartner
         {
             LoginCommand = new Command(LoginClicked);
             ClearCommand = new Command(ClearClicked);
+            RegisterCommand = new Command(async ()=> await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage()));
         }
         #endregion
         #region Methods 

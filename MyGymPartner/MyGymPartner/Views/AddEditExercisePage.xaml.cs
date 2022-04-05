@@ -22,6 +22,7 @@ namespace MyGymPartner.Views
         }
         public AddEditExercisePage(ExerciseModel selectedExercise)//Initializing view model for existing Exercise
         {
+            
             InitializeComponent();
             BindingContext = new AddEditExerciseViewModel(selectedExercise);
         }
