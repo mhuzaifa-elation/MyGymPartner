@@ -14,4 +14,15 @@ namespace MyGymPartner.Models
         public string URL { get; set; }
         public string ImageText { get; set; }
     }
+    public class FavExerciseModel
+    {
+        public string Key { get; set; }
+        public string ExerciseName { get; set; }
+        public string Description { get; set; }
+        public string Type { get; set; }
+        public string URL { get; set; }
+        public string ImageText { get; set; }
+        public int Weight { get;  set; }
+        public int Reps { get;  set; }
+    }
 }

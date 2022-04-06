@@ -18,3 +18,4 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Release\netstandard2.0
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Release\netstandard2.0\MyGymPartner.pdb
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Release\netstandard2.0\Views\DisplayExercise.xaml.g.cs
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Release\netstandard2.0\Views\RegisterPage.xaml.g.cs
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Release\netstandard2.0\MyGymPartner.csprojAssemblyReference.cache

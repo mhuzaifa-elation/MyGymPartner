@@ -16,10 +16,24 @@ namespace MyGymPartner.ViewModels
         string ExerciseName = "";
         string Type = "";
         string Url = "";
+        string Reps = "";
+        string Weight = "";
         string Description = "";
+        bool wrvisibility = false;
         private ImageSource image = null;
+        private FavExerciseModel selectedExercise;
+
         public ICommand URLTapCommand { get; set; }
         public string Key { get; set; } = string.Empty;
+        public bool WRvisibility
+        {
+            get { return this.wrvisibility; }
+            set
+            {
+                this.wrvisibility = value;
+                this.OnPropertyChanged(nameof(WRvisibility));
+            }
+        }
         public ImageSource ImageSourceB
         {
             get { return this.image; }
@@ -68,6 +82,32 @@ namespace MyGymPartner.ViewModels
                 OnPropertyChanged(nameof(TypeB));
             }
         }
+        public string RepsB
+        {
+            get => Reps;
+            set
+            {
+                if (value == Reps)
+                {
+                    return;
+                }
+                Reps = value;
+                OnPropertyChanged(nameof(RepsB));
+            }
+        }
+        public string WeightB
+        {
+            get => Weight;
+            set
+            {
+                if (value == Weight)
+                {
+                    return;
+                }
+                Weight = value;
+                OnPropertyChanged(nameof(WeightB));
+            }
+        }
         public string DescriptionB
         {
             get => Description;
@@ -97,10 +137,31 @@ namespace MyGymPartner.ViewModels
                 {
                     ImageSourceB = ConvertBase64TexttoImage(selectedExercise.ImageText);
                 }
+                WRvisibility = false;
             }
             URLTapCommand = new Command(OpenHyperLink);
            
 
+        }
+
+        public DisplayExerciseViewModel(FavExerciseModel selectedExercise)
+        {
+            if (selectedExercise != null)
+            {
+                this.Key = selectedExercise.Key ?? "";
+                ExerciseNameB = selectedExercise.ExerciseName;
+                TypeB = selectedExercise.Type;
+                DescriptionB = selectedExercise.Description;
+                URLB = selectedExercise.URL;
+                if ((selectedExercise.ImageText ?? "").Length > 0)
+                {
+                    ImageSourceB = ConvertBase64TexttoImage(selectedExercise.ImageText);
+                }
+                WRvisibility = true;
+                WeightB = selectedExercise.Weight.ToString() ?? "";
+                RepsB = selectedExercise.Reps.ToString() ?? "";
+            }
+            URLTapCommand = new Command(OpenHyperLink);
         }
 
         private async void OpenHyperLink(object obj)

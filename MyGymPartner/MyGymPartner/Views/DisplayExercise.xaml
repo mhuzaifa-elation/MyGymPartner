@@ -53,6 +53,24 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        IsVisible="{Binding WRvisibility}">
+                        <Label
+                            TextColor="DarkSlateGray"
+                            Text="Weight" />
+                        <Entry
+                            IsEnabled="False"
+                            Text="{Binding WeightB}" />
+                        <Label
+                            TextColor="DarkSlateGray"
+                            Text="Reps" />
+                        <Entry
+                            IsEnabled="False"
+                            Text="{Binding RepsB}" />
+
+                    </StackLayout>
                     <Label
                         TextColor="DarkSlateGray"
                         Text="Image" />

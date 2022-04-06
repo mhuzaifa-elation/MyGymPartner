@@ -14,14 +14,15 @@ namespace MyGymPartner.ViewModels
     public class FavoritesViewModel : INotifyPropertyChanged
     {
         #region ClassVariables
-        private List<ExerciseModel> _excercises;
-        private ExerciseModel _selectedExercise;
+        private List<FavExerciseModel> _excercises;
+        private FavExerciseModel _selectedExercise;
         private bool _isRefreshing;
         public ICommand RefreshCommand { get; set; }
         public ICommand ShowCommand { get; set; }
+        public ICommand EnterWorkoutCommand { get; set; }
         public ICommand BackCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
-        public List<ExerciseModel> Exercises
+        public List<FavExerciseModel> Exercises
         {
             get
             {
@@ -35,7 +36,7 @@ namespace MyGymPartner.ViewModels
         }
 
 
-        public ExerciseModel SelectedExercise
+        public FavExerciseModel SelectedExercise
         {
             get
             {
@@ -69,6 +70,7 @@ namespace MyGymPartner.ViewModels
             GetExercises();
             RefreshCommand = new Command(CmdRefresh);
             BackCommand = new Command(async () => await Application.Current.MainPage.Navigation.PopAsync());
+            EnterWorkoutCommand = new Command(EnterWorkout);
             ShowCommand = new Command(ShowExercise);
             DeleteCommand = new Command(DeleteExercise);
         }
@@ -77,9 +79,9 @@ namespace MyGymPartner.ViewModels
         private void GetExercises() //Gets Saved Favorites exercises in the Device
         {
             var AlreadySaved = Preferences.Get("MyFavExcercises", "");
-            List<ExerciseModel> AllExercises = new List<ExerciseModel>();
+            List<FavExerciseModel> AllExercises = new List<FavExerciseModel>();
             if (AlreadySaved.Length>0)
-                AllExercises = JsonConvert.DeserializeObject<List<ExerciseModel>>(AlreadySaved);
+                AllExercises = JsonConvert.DeserializeObject<List<FavExerciseModel>>(AlreadySaved);
             Exercises = AllExercises;
         }
         private async void DeleteExercise() //Delete Selected Exercise in the Device
@@ -101,6 +103,26 @@ namespace MyGymPartner.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
 
             }
+        }
+        private async void EnterWorkout()
+        {
+            if (SelectedExercise != null)
+            {
+                var Weight = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Weight.", "OK", "Cancel", null, -1, Keyboard.Numeric);
+                var Reps = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Reps.", "OK", "Cancel", null, -1, Keyboard.Numeric);
+                foreach (var item in Exercises)
+                {
+                    if (item.Key==SelectedExercise.Key)
+                    {
+                        item.Weight = Convert.ToInt32(Weight??"0");
+                        item.Reps = Convert.ToInt32(Reps ?? "0"); 
+                    }
+                }
+
+                var serializedcontnet = JsonConvert.SerializeObject(Exercises);
+                Preferences.Set("MyFavExcercises", serializedcontnet);
+            }
+
         }
         private async void ShowExercise() //Display Selected Exercise As A pop up Alert
         {

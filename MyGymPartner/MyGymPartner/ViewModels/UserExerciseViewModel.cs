@@ -101,21 +101,32 @@ namespace MyGymPartner.ViewModels
                 if (SelectedExercise != null)
                 {
                     var AlreadySaved = Preferences.Get("MyFavExcercises", "");
-                    List<ExerciseModel> exercises;
+                    List<FavExerciseModel> exercises;
                     if (AlreadySaved.Length == 0)
                     {
-                        exercises = new List<ExerciseModel>();
+                        exercises = new List<FavExerciseModel>();
 
                     }
                     else
                     {
-                        exercises = JsonConvert.DeserializeObject<List<ExerciseModel>>(AlreadySaved);
+                        exercises = JsonConvert.DeserializeObject<List<FavExerciseModel>>(AlreadySaved);
                         if (exercises.Exists(x => x.Key == SelectedExercise.Key))
                         {
                             throw new Exception("Exercise is already Added to Favorites.");
                         }
                     }
-                    exercises.Add(SelectedExercise);
+                    exercises.Add(new FavExerciseModel()
+                    {
+                        Key = SelectedExercise.Key,
+                        Description = SelectedExercise.Description,
+                        ExerciseName = SelectedExercise.ExerciseName,
+                        ImageText = SelectedExercise.ImageText,
+                        Type = SelectedExercise.Type,
+                        URL= SelectedExercise.URL,
+                        Weight=0,
+                        Reps=0
+
+                    }); 
                     var serializedcontnet = JsonConvert.SerializeObject(exercises);
                     Preferences.Set("MyFavExcercises", serializedcontnet);
                     await Application.Current.MainPage.DisplayAlert("Information", "Exercise added to favorites successfully.", "OK");

@@ -80,11 +80,19 @@
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="FillAndExpand"
                 MinimumHeightRequest="90">
-                <Button
-                    Grid.Row="0"
-                    MinimumHeightRequest="45"
-                    Text="Show"
-                    Command="{Binding ShowCommand}" />
+                <StackLayout
+                    Grid.Row="0" Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand">
+                    <Button
+                        MinimumHeightRequest="45"
+                        Text="Show"
+                        Command="{Binding ShowCommand}" />
+                    <Button
+                        MinimumHeightRequest="45"
+                        Text="Add Workout"
+                        Command="{Binding EnterWorkoutCommand}" />
+
+                </StackLayout>
                 <Grid
                     Grid.Row="1"
                     ColumnDefinitions="*,*"

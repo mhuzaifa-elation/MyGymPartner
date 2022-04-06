@@ -19,5 +19,10 @@ namespace MyGymPartner.Views
             InitializeComponent();
             BindingContext = new DisplayExerciseViewModel(selectedExercise);
         }
+        public DisplayExercise(FavExerciseModel selectedExercise)
+        {
+            InitializeComponent();
+            BindingContext = new DisplayExerciseViewModel(selectedExercise);
+        }
     }
 }

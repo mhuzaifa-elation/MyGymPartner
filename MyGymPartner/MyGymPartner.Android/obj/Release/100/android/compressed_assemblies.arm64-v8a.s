@@ -98,7 +98,7 @@
 
 	/* 10: MyGymPartner.dll */
 	/* uncompressed_file_size */
-	.word	73728
+	.word	77824
 	/* loaded */
 	.byte	0
 	/* data */
