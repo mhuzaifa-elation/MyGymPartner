@@ -75,7 +75,12 @@ namespace MyGymPartner.ViewModels
             ShowFavorites = new Command(async () => await Application.Current.MainPage.Navigation.PushAsync(new FavoritesPage()));
             ShowCommand = new Command(ShowExercise);
             AddtoFavCommand = new Command(AddtoFavorites);
-            BackCommand = new Command(async () => await Application.Current.MainPage.Navigation.PopAsync());
+            BackCommand = new Command(async () => {
+
+                var result = await Application.Current.MainPage.DisplayAlert("Confirmation", "Do you want to Logout?", "Yes","No");
+                if (result)
+                    await Application.Current.MainPage.Navigation.PopAsync();
+            });
         }
         #endregion
         #region Methods 

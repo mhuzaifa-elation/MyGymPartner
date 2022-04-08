@@ -23,6 +23,7 @@ namespace MyGymPartner.ViewModels
         private ImageSource image = null;
         private FavExerciseModel selectedExercise;
 
+        public ICommand BackCommand { get; set; }
         public ICommand URLTapCommand { get; set; }
         public string Key { get; set; } = string.Empty;
         public bool WRvisibility
@@ -140,7 +141,8 @@ namespace MyGymPartner.ViewModels
                 WRvisibility = false;
             }
             URLTapCommand = new Command(OpenHyperLink);
-           
+            BackCommand = new Command(async () => await Application.Current.MainPage.Navigation.PopAsync());
+
 
         }
 

@@ -108,8 +108,8 @@ namespace MyGymPartner.ViewModels
         {
             if (SelectedExercise != null)
             {
-                var Weight = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Weight.", "OK", "Cancel", null, -1, Keyboard.Numeric);
-                var Reps = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Reps.", "OK", "Cancel", null, -1, Keyboard.Numeric);
+                var Weight = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Weight.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
+                var Reps = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Reps.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
                 foreach (var item in Exercises)
                 {
                     if (item.Key==SelectedExercise.Key)
