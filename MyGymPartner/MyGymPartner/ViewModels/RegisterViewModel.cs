@@ -109,6 +109,12 @@ namespace MyGymPartner.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
         #endregion
+        public void TestCase()
+        {
 
+            var Username = "TestUser";
+            var Password = "123456";
+            FirebaseServices.Signup(Username, Password);
+        }
     }
 }

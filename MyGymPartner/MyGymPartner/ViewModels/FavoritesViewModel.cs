@@ -164,4 +164,5 @@ namespace MyGymPartner.ViewModels
         #endregion
 
     }
+
 }

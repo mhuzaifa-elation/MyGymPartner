@@ -7,6 +7,8 @@ namespace MyGymPartner.Models
    // Exercise Model to Save this as table in Firebase DB
     public class ExerciseModel
     {
+        internal string ExerciseNameB;
+
         public string Key { get; set; }
         public string ExerciseName { get; set; }
         public string Description { get; set; }

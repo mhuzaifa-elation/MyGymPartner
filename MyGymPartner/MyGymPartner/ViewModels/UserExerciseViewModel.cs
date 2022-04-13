@@ -158,7 +158,20 @@ namespace MyGymPartner.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
         #endregion
+        public void TestCase()
+        {
 
+            var ExerciseT = new ExerciseModel()
+            {
+                ExerciseName = "ExerciseName",
+                Type = "TypeB",
+                Description = "DescriptionB",
+                URL = "URLB",
+                ImageText = "ImageBase64Text"
+            };
+            SelectedExercise = ExerciseT;
+            AddtoFavorites();
+        }
 
     }
 }

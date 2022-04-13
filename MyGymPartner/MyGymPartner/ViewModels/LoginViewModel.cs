@@ -51,11 +51,11 @@ namespace MyGymPartner
         {
             LoginCommand = new Command(LoginClicked);
             ClearCommand = new Command(ClearClicked);
-            RegisterCommand = new Command(async ()=> await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage()));
+            RegisterCommand = new Command(async () => await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage()));
         }
         #endregion
         #region Methods 
-        private  void ClearClicked() //Clears Credentials
+        private void ClearClicked() //Clears Credentials
         {
             UsernameB = string.Empty;
             PasswordB = string.Empty;
@@ -89,7 +89,7 @@ namespace MyGymPartner
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Invalid Username/Password.\nTryAgain!", "OK");
             }
-            
+
 
         }
         #endregion
@@ -101,6 +101,13 @@ namespace MyGymPartner
                 PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
         #endregion
+        public void TestCase()
+            {
+
+            var Username = "TestUser";
+            var Password = "123456";
+            FirebaseServices.Login(Username, Password);
+        }
 
     }
 }
