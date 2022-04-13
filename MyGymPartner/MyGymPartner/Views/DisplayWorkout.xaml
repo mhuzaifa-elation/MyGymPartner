@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dg="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid"
+    x:Class="MyGymPartner.Views.DisplayWorkout">
+    <ContentPage.Padding>
+        <OnPlatform
+            x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On
+                    Platform="iOS"
+                    Value="0, 20, 0, 20" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <StackLayout
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="StartAndExpand">
+                <dg:DataGrid
+                    ItemsSource="{Binding Exercises}"
+                    SelectionEnabled="True"
+                    SelectedItem="{Binding SelectedExercise}"
+                    RowHeight="60"
+                    HeaderHeight="30"
+                    BorderColor="#CCCCCC"
+                    HeaderBackground="#E0E6F8"
+                    PullToRefreshCommand="{Binding RefreshCommand}"
+                    IsRefreshing="{Binding IsRefreshing}"
+                    ActiveRowColor="#a497f7">
+                    <x:Arguments>
+                        <ListViewCachingStrategy>RetainElement</ListViewCachingStrategy>
+                    </x:Arguments>
+                    <dg:DataGrid.HeaderFontSize>
+                        <OnIdiom
+                            x:TypeArguments="x:Double">
+                            <OnIdiom.Tablet>15</OnIdiom.Tablet>
+                            <OnIdiom.Phone>12</OnIdiom.Phone>
+                        </OnIdiom>
+                    </dg:DataGrid.HeaderFontSize>
+                    <dg:DataGrid.Columns>
+                        <dg:DataGridColumn
+                            Title="Weight"
+                            PropertyName="Weight"
+                            Width="1*" />
+                        <dg:DataGridColumn
+                            Title="Reps"
+                            PropertyName="Reps"
+                            Width="1*" />
+                    </dg:DataGrid.Columns>
+                    <dg:DataGrid.RowsBackgroundColorPalette>
+                        <dg:PaletteCollection>
+                            <Color>#e6e6e6</Color>
+                            <Color>#FFFFFF</Color>
+                        </dg:PaletteCollection>
+                    </dg:DataGrid.RowsBackgroundColorPalette>
+                </dg:DataGrid>
+            </StackLayout>
+                    <Button
+                        VerticalOptions="End"
+                        Text="Back"
+                        MinimumHeightRequest="45"
+                        Command="{Binding BackCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

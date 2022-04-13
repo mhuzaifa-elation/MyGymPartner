@@ -159,9 +159,9 @@ namespace MyGymPartner.ViewModels
                 {
                     ImageSourceB = ConvertBase64TexttoImage(selectedExercise.ImageText);
                 }
-                WRvisibility = true;
-                WeightB = selectedExercise.Weight.ToString() ?? "";
-                RepsB = selectedExercise.Reps.ToString() ?? "";
+                WRvisibility = false;
+                //WeightB = selectedExercise.Weight.ToString() ?? "";
+                //RepsB = selectedExercise.Reps.ToString() ?? "";
             }
             URLTapCommand = new Command(OpenHyperLink);
         }

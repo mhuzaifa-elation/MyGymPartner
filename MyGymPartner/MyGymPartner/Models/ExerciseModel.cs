@@ -22,7 +22,12 @@ namespace MyGymPartner.Models
         public string Type { get; set; }
         public string URL { get; set; }
         public string ImageText { get; set; }
-        public int Weight { get;  set; }
-        public int Reps { get;  set; }
+        public List<Workout> WorkoutDetails { get; set; }
+    }
+
+    public class Workout
+    {
+        public int Weight { get; set; }
+        public int Reps { get; set; }
     }
 }

@@ -128,9 +128,7 @@ namespace MyGymPartner.ViewModels
                         ImageText = SelectedExercise.ImageText,
                         Type = SelectedExercise.Type,
                         URL= SelectedExercise.URL,
-                        Weight=0,
-                        Reps=0
-
+                    WorkoutDetails=new List<Workout>()
                     }); 
                     var serializedcontnet = JsonConvert.SerializeObject(exercises);
                     Preferences.Set("MyFavExcercises", serializedcontnet);

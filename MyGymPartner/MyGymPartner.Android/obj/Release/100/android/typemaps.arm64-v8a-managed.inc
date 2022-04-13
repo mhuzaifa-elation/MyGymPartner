@@ -777,20 +777,13 @@ module10_managed_to_java_duplicates:
 	.section	.rodata.module11_managed_to_java,"a",@progbits
 	.type	module11_managed_to_java, @object
 module11_managed_to_java:
-	.word	33554434
-	.word	835
+	.word	33554444
+	.word	412
 	.size	module11_managed_to_java, 8
 
 	.section	.rodata.module12_managed_to_java,"a",@progbits
 	.type	module12_managed_to_java, @object
 module12_managed_to_java:
-	.word	33554444
-	.word	412
-	.size	module12_managed_to_java, 8
-
-	.section	.rodata.module13_managed_to_java,"a",@progbits
-	.type	module13_managed_to_java, @object
-module13_managed_to_java:
 	.word	33554610
 	.word	1014
 	.word	33554615
@@ -1811,11 +1804,11 @@ module13_managed_to_java:
 	.word	849
 	.word	33555570
 	.word	969
-	.size	module13_managed_to_java, 4080
+	.size	module12_managed_to_java, 4080
 
-	.section	.rodata.module13_managed_to_java_duplicates,"a",@progbits
-	.type	module13_managed_to_java_duplicates, @object
-module13_managed_to_java_duplicates:
+	.section	.rodata.module12_managed_to_java_duplicates,"a",@progbits
+	.type	module12_managed_to_java_duplicates, @object
+module12_managed_to_java_duplicates:
 	.word	33554619
 	.word	967
 	.word	33554621
@@ -1978,16 +1971,23 @@ module13_managed_to_java_duplicates:
 	.word	846
 	.word	33555548
 	.word	849
-	.size	module13_managed_to_java_duplicates, 648
+	.size	module12_managed_to_java_duplicates, 648
 
-	.section	.rodata.module14_managed_to_java,"a",@progbits
-	.type	module14_managed_to_java, @object
-module14_managed_to_java:
+	.section	.rodata.module13_managed_to_java,"a",@progbits
+	.type	module13_managed_to_java, @object
+module13_managed_to_java:
 	.word	33554443
 	.word	605
 	.word	33554445
 	.word	606
-	.size	module14_managed_to_java, 16
+	.size	module13_managed_to_java, 16
+
+	.section	.rodata.module14_managed_to_java,"a",@progbits
+	.type	module14_managed_to_java, @object
+module14_managed_to_java:
+	.word	33554434
+	.word	835
+	.size	module14_managed_to_java, 8
 
 	.section	.rodata.module15_managed_to_java,"a",@progbits
 	.type	module15_managed_to_java, @object

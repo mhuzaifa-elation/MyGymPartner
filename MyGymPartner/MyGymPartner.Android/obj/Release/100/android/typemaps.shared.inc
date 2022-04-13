@@ -67,26 +67,26 @@
 	.section	.rodata.map_aname.11,"aMS",@progbits,1
 	.type	.L.map_aname.11, @object
 .L.map_aname.11:
-	.asciz	"MyGymPartner.Android"
-	.size	.L.map_aname.11, 21
+	.asciz	"Xamarin.AndroidX.CardView"
+	.size	.L.map_aname.11, 26
 
 	.section	.rodata.map_aname.12,"aMS",@progbits,1
 	.type	.L.map_aname.12, @object
 .L.map_aname.12:
-	.asciz	"Xamarin.AndroidX.CardView"
-	.size	.L.map_aname.12, 26
+	.asciz	"Mono.Android"
+	.size	.L.map_aname.12, 13
 
 	.section	.rodata.map_aname.13,"aMS",@progbits,1
 	.type	.L.map_aname.13, @object
 .L.map_aname.13:
-	.asciz	"Mono.Android"
-	.size	.L.map_aname.13, 13
+	.asciz	"FormsViewGroup"
+	.size	.L.map_aname.13, 15
 
 	.section	.rodata.map_aname.14,"aMS",@progbits,1
 	.type	.L.map_aname.14, @object
 .L.map_aname.14:
-	.asciz	"FormsViewGroup"
-	.size	.L.map_aname.14, 15
+	.asciz	"MyGymPartner.Android"
+	.size	.L.map_aname.14, 21
 
 	.section	.rodata.map_aname.15,"aMS",@progbits,1
 	.type	.L.map_aname.15, @object

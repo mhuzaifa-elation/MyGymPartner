@@ -20,6 +20,7 @@ namespace MyGymPartner.ViewModels
         public ICommand RefreshCommand { get; set; }
         public ICommand ShowCommand { get; set; }
         public ICommand EnterWorkoutCommand { get; set; }
+        public ICommand ShowWorkoutCommand { get; set; }
         public ICommand BackCommand { get; set; }
         public ICommand DeleteCommand { get; set; }
         public List<FavExerciseModel> Exercises
@@ -71,6 +72,7 @@ namespace MyGymPartner.ViewModels
             RefreshCommand = new Command(CmdRefresh);
             BackCommand = new Command(async () => await Application.Current.MainPage.Navigation.PopAsync());
             EnterWorkoutCommand = new Command(EnterWorkout);
+            ShowWorkoutCommand = new Command(ShowWorkout);
             ShowCommand = new Command(ShowExercise);
             DeleteCommand = new Command(DeleteExercise);
         }
@@ -108,14 +110,18 @@ namespace MyGymPartner.ViewModels
         {
             if (SelectedExercise != null)
             {
-                var Weight = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Weight.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
-                var Reps = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Reps.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
+                string Weight = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Weight.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
+                string Reps = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Reps.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
                 foreach (var item in Exercises)
                 {
-                    if (item.Key==SelectedExercise.Key)
+                    if (item.Key == SelectedExercise.Key)
                     {
-                        item.Weight = Convert.ToInt32(Weight??"0");
-                        item.Reps = Convert.ToInt32(Reps ?? "0"); 
+                        var newWorkout = new Workout()
+                        {
+                            Weight = Convert.ToInt32(Weight ?? "0"),
+                            Reps = Convert.ToInt32(Reps ?? "0")
+                        };
+                        item.WorkoutDetails.Add(newWorkout);
                     }
                 }
 
@@ -129,6 +135,14 @@ namespace MyGymPartner.ViewModels
             if (SelectedExercise != null)
             {
                 await Application.Current.MainPage.Navigation.PushAsync(new DisplayExercise(SelectedExercise));
+            }
+
+        }
+        private async void ShowWorkout() //Display Selected Exercise As A pop up Alert
+        {
+            if (SelectedExercise != null)
+            {
+                await Application.Current.MainPage.Navigation.PushAsync(new DisplayWorkout(SelectedExercise));
             }
 
         }

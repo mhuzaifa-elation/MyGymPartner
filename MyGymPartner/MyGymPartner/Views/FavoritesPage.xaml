@@ -91,6 +91,10 @@
                         MinimumHeightRequest="45"
                         Text="Add Workout"
                         Command="{Binding EnterWorkoutCommand}" />
+                    <Button
+                        MinimumHeightRequest="45"
+                        Text="Show Workout"
+                        Command="{Binding ShowWorkoutCommand}" />
 
                 </StackLayout>
                 <Grid
