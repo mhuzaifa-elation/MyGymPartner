@@ -110,23 +110,30 @@ namespace MyGymPartner.ViewModels
         {
             if (SelectedExercise != null)
             {
-                string Weight = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Weight.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
-                string Reps = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Reps.", "OK", "Cancel", null, -1, Keyboard.Numeric)??"0";
-                foreach (var item in Exercises)
+                string Weight = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Weight.", "OK", "Cancel", null, -1, Keyboard.Numeric);
+                string Reps = await Application.Current.MainPage.DisplayPromptAsync("Workout", "Enter Reps.", "OK", "Cancel", null, -1, Keyboard.Numeric);
+                if (Weight!=null&&Reps!=null)
                 {
-                    if (item.Key == SelectedExercise.Key)
+                    if (Weight.Length > 0 && Reps.Length > 0) 
                     {
-                        var newWorkout = new Workout()
+                        foreach (var item in Exercises)
                         {
-                            Weight = Convert.ToInt32(Weight ?? "0"),
-                            Reps = Convert.ToInt32(Reps ?? "0")
-                        };
-                        item.WorkoutDetails.Add(newWorkout);
-                    }
-                }
+                            if (item.Key == SelectedExercise.Key)
+                            {
+                                var newWorkout = new Workout()
+                                {
+                                    Weight = Convert.ToInt32(Weight ?? "0"),
+                                    Reps = Convert.ToInt32(Reps ?? "0")
+                                };
+                                item.WorkoutDetails.Add(newWorkout);
+                            }
+                        }
 
-                var serializedcontnet = JsonConvert.SerializeObject(Exercises);
-                Preferences.Set("MyFavExcercises", serializedcontnet);
+                        var serializedcontnet = JsonConvert.SerializeObject(Exercises);
+                        Preferences.Set("MyFavExcercises", serializedcontnet);
+                    }
+
+                }
             }
 
         }

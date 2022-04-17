@@ -35,3 +35,4 @@ D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\M
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\MyGymPartner.csprojAssemblyReference.cache
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\Views\DisplayExercise.xaml.g.cs
 D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+D:\HUZAIFA\GIT\MyGymPartner\MyGymPartner\MyGymPartner\obj\Debug\netstandard2.0\Views\DisplayWorkout.xaml.g.cs

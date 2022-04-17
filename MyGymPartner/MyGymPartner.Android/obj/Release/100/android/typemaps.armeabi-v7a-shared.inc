@@ -85,74 +85,74 @@
 	.section	.rodata.map_aname.14,"aMS",%progbits,1
 	.type	.L.map_aname.14, %object
 .L.map_aname.14:
-	.asciz	"MyGymPartner.Android"
-	.size	.L.map_aname.14, 21
+	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
+	.size	.L.map_aname.14, 36
 
 	.section	.rodata.map_aname.15,"aMS",%progbits,1
 	.type	.L.map_aname.15, %object
 .L.map_aname.15:
-	.asciz	"Xamarin.AndroidX.SwipeRefreshLayout"
-	.size	.L.map_aname.15, 36
+	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
+	.size	.L.map_aname.15, 37
 
 	.section	.rodata.map_aname.16,"aMS",%progbits,1
 	.type	.L.map_aname.16, %object
 .L.map_aname.16:
-	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
-	.size	.L.map_aname.16, 37
+	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
+	.size	.L.map_aname.16, 46
 
 	.section	.rodata.map_aname.17,"aMS",%progbits,1
 	.type	.L.map_aname.17, %object
 .L.map_aname.17:
-	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
-	.size	.L.map_aname.17, 46
+	.asciz	"Xamarin.Essentials"
+	.size	.L.map_aname.17, 19
 
 	.section	.rodata.map_aname.18,"aMS",%progbits,1
 	.type	.L.map_aname.18, %object
 .L.map_aname.18:
-	.asciz	"Xamarin.Essentials"
-	.size	.L.map_aname.18, 19
+	.asciz	"AndHUD"
+	.size	.L.map_aname.18, 7
 
 	.section	.rodata.map_aname.19,"aMS",%progbits,1
 	.type	.L.map_aname.19, %object
 .L.map_aname.19:
-	.asciz	"AndHUD"
-	.size	.L.map_aname.19, 7
+	.asciz	"Xamarin.AndroidX.AppCompat"
+	.size	.L.map_aname.19, 27
 
 	.section	.rodata.map_aname.20,"aMS",%progbits,1
 	.type	.L.map_aname.20, %object
 .L.map_aname.20:
-	.asciz	"Xamarin.AndroidX.AppCompat"
-	.size	.L.map_aname.20, 27
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	.L.map_aname.20, 22
 
 	.section	.rodata.map_aname.21,"aMS",%progbits,1
 	.type	.L.map_aname.21, %object
 .L.map_aname.21:
-	.asciz	"Xamarin.AndroidX.Core"
-	.size	.L.map_aname.21, 22
+	.asciz	"Xamarin.AndroidX.SavedState"
+	.size	.L.map_aname.21, 28
 
 	.section	.rodata.map_aname.22,"aMS",%progbits,1
 	.type	.L.map_aname.22, %object
 .L.map_aname.22:
-	.asciz	"Xamarin.AndroidX.SavedState"
-	.size	.L.map_aname.22, 28
+	.asciz	"Xamarin.Google.Guava.ListenableFuture"
+	.size	.L.map_aname.22, 38
 
 	.section	.rodata.map_aname.23,"aMS",%progbits,1
 	.type	.L.map_aname.23, %object
 .L.map_aname.23:
-	.asciz	"Xamarin.Google.Guava.ListenableFuture"
-	.size	.L.map_aname.23, 38
+	.asciz	"Xamarin.AndroidX.DrawerLayout"
+	.size	.L.map_aname.23, 30
 
 	.section	.rodata.map_aname.24,"aMS",%progbits,1
 	.type	.L.map_aname.24, %object
 .L.map_aname.24:
-	.asciz	"Xamarin.AndroidX.DrawerLayout"
-	.size	.L.map_aname.24, 30
+	.asciz	"Xamarin.AndroidX.Loader"
+	.size	.L.map_aname.24, 24
 
 	.section	.rodata.map_aname.25,"aMS",%progbits,1
 	.type	.L.map_aname.25, %object
 .L.map_aname.25:
-	.asciz	"Xamarin.AndroidX.Loader"
-	.size	.L.map_aname.25, 24
+	.asciz	"MyGymPartner.Android"
+	.size	.L.map_aname.25, 21
 
 	.section	.rodata.map_aname.26,"aMS",%progbits,1
 	.type	.L.map_aname.26, %object
